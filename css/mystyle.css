@@ -28,44 +28,6 @@ color: #d56400;
 font-family: 'Hammersmith One', sans-serif;
 }
 
-/*Scroll icons */
-/*#header-nav {
-    margin-top: 50px;
-}
-    #header-nav a {
-        display: inline-block;
-        min-width: 100px;
-        color: #fff;
-    }
-
-    #header-nav a:hover,
-    #header-nav a:active,
-    #header-nav a:focus {
-        text-decoration: none;
-        color: #fff;
-    }
-
-    #header-nav a:hover .bb-animate {
-        background: #d56400;
-        width: 70%;
-    }
-#header-nav i {
-        font-size: 24px;
-        margin-bottom: 10px;
-        opacity: .7;
-    }
-
-.bb-animate {
-        display: block;
-        height: 1px;
-        width: 0;
-        background: rgba(255,255,255,0);
-        -webkit-transition: all .2s ease-in-out;
-        -moz-transition: all .2s ease-in-out;
-        -o-transition: all .2s ease-in-out;
-        transition: all .2s ease-in-out;
-    }*/
-
 #fix-menu {
     display: none;
     position: fixed;
