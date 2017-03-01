@@ -1,0 +1,510 @@
+/* line 3, D:/workspace/Github/milenalates.com/scss/main.scss */
+body h1, h2, h3, h4, h5 {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+/* line 6, D:/workspace/Github/milenalates.com/scss/main.scss */
+body p, a {
+  font-family: 'Arial', sans-serif;
+}
+
+/* line 10, D:/workspace/Github/milenalates.com/scss/main.scss */
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+/* line 14, D:/workspace/Github/milenalates.com/scss/main.scss */
+#home {
+  background: url(../images/first-background.jpg) no-repeat center center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/* line 21, D:/workspace/Github/milenalates.com/scss/main.scss */
+#home h1 {
+  display: inline-block;
+  font-size: 64px;
+  color: white;
+}
+
+/* line 26, D:/workspace/Github/milenalates.com/scss/main.scss */
+#home h1 span {
+  color: #d56400;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+/* line 31, D:/workspace/Github/milenalates.com/scss/main.scss */
+#fix-menu {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  right: 50px;
+  top: 50%;
+  width: 26px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 43, D:/workspace/Github/milenalates.com/scss/main.scss */
+#fix-menu a {
+  color: #c3c3c3;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+/* line 51, D:/workspace/Github/milenalates.com/scss/main.scss */
+#fix-menu a:hover, #fix-menu .active {
+  background-color: #e68733;
+}
+
+/* line 56, D:/workspace/Github/milenalates.com/scss/main.scss */
+.menu-links {
+  display: inline-block;
+  font-size: 15px;
+  margin: 10px 0;
+  min-width: 16px;
+  padding: 10px 20px;
+}
+
+/* line 63, D:/workspace/Github/milenalates.com/scss/main.scss */
+.menu-links:hover, .menu-links:active, .menu-links:focus {
+  text-decoration: none;
+}
+
+/* line 67, D:/workspace/Github/milenalates.com/scss/main.scss */
+.menu-links i {
+  min-width: 18px;
+  font-size: 18px;
+}
+
+/* line 72, D:/workspace/Github/milenalates.com/scss/main.scss */
+.transition {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 80, D:/workspace/Github/milenalates.com/scss/main.scss */
+  .slick-custom-nav {
+    margin-top: 0;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  /* line 88, D:/workspace/Github/milenalates.com/scss/main.scss */
+  #fix-menu {
+    position: fixed;
+    bottom: -1px;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: 45px;
+    transform: none;
+    text-align: center;
+    background-color: #3F3F3F;
+  }
+  /* line 99, D:/workspace/Github/milenalates.com/scss/main.scss */
+  #fix-menu a {
+    display: inline-block;
+    height: 45px;
+    margin: 0;
+    border: none;
+  }
+}
+
+/*End Scroll menu*/
+/* line 109, D:/workspace/Github/milenalates.com/scss/main.scss */
+h3.description-title {
+  color: white;
+}
+
+/* line 112, D:/workspace/Github/milenalates.com/scss/main.scss */
+#about, #education, #my-skills, #portfolio, #contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* line 118, D:/workspace/Github/milenalates.com/scss/main.scss */
+section.about-skills-contact h2 {
+  margin-bottom: 50px;
+  display: inline-block;
+  border-bottom: 2px solid #d56400;
+}
+
+/* line 123, D:/workspace/Github/milenalates.com/scss/main.scss */
+section.about-skills-contact p {
+  color: #000;
+  padding-top: 3px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* line 141, D:/workspace/Github/milenalates.com/scss/main.scss */
+.education-portfolio {
+  background: url(../images/subtle_carbon_@2X.png);
+}
+
+/* line 144, D:/workspace/Github/milenalates.com/scss/main.scss */
+.education-portfolio h2 {
+  color: white;
+  margin-bottom: 40px;
+  display: inline-block;
+  border-bottom: 2px solid #d56400;
+}
+
+/* line 151, D:/workspace/Github/milenalates.com/scss/main.scss */
+.about-skills h6 {
+  color: #000;
+}
+
+/* line 155, D:/workspace/Github/milenalates.com/scss/main.scss */
+.progress-bar-warning {
+  background-color: #d56400;
+}
+
+/*Timeline*/
+/* line 159, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* line 163, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered:before, .timeline-centered:after {
+  content: " ";
+  display: table;
+}
+
+/* line 167, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered:after {
+  clear: both;
+}
+
+/* line 171, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 4px;
+  background: #ccc;
+  left: 50%;
+  top: 20px;
+  bottom: 20px;
+  margin-left: -4px;
+}
+
+/* line 182, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry {
+  position: relative;
+  width: 50%;
+  float: right;
+  margin-bottom: 40px;
+  clear: both;
+}
+
+/* line 190, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry.left-aligned {
+  float: left;
+}
+
+/* line 192, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner {
+  margin-left: 0;
+  margin-right: -18px;
+}
+
+/* line 195, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time {
+  left: auto;
+  right: -140px;
+  text-align: left;
+}
+
+/* line 200, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-icon {
+  float: right;
+}
+
+/* line 203, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label {
+  margin-left: 0;
+  margin-right: 70px;
+}
+
+/* line 206, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label:after {
+  left: auto;
+  right: 0;
+  margin-left: 0;
+  margin-right: -9px;
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 222, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner {
+  position: relative;
+  margin-left: -22px;
+}
+
+/* line 227, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-time {
+  position: absolute;
+  left: -140px;
+  text-align: right;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 237, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+  -moz-box-shadow: 0 0 0 4px #ccc;
+  -webkit-box-shadow: 0 0 0 4px #ccc;
+  box-shadow: 0 0 0 4px #ccc;
+  line-height: 40px;
+  font-size: 15px;
+  float: left;
+}
+
+/* line 256, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-primary {
+  padding-top: 3px;
+  background-color: #df6900;
+  color: #fff;
+}
+
+/* line 262, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.bg-secondary {
+  background-color: #df6900;
+  padding-top: 3px;
+  color: #fff;
+}
+
+/* line 267, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+  margin-left: 70px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 276, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 9px 9px 0;
+  border-color: transparent #ccc transparent transparent;
+  left: 0;
+  top: 10px;
+  margin-left: -9px;
+}
+
+/* line 289, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.428571429;
+}
+
+/* line 297, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h4 {
+  color: #d56400;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* line 303, D:/workspace/Github/milenalates.com/scss/main.scss */
+.timeline-time {
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* line 309, D:/workspace/Github/milenalates.com/scss/main.scss */
+.ih-item.square.effect6 .info h3 {
+  background: #d56400;
+  font-size: 14px;
+}
+
+/* line 313, D:/workspace/Github/milenalates.com/scss/main.scss */
+.ih-item.square.effect6 .info p {
+  color: #ccc;
+  font-family: 'Arimo',sans-serif;
+}
+
+/* line 317, D:/workspace/Github/milenalates.com/scss/main.scss */
+.ih-item.square {
+  border: 4px solid #ccc;
+  height: inherit;
+  margin-bottom: 20px;
+}
+
+/*contact*/
+/* line 326, D:/workspace/Github/milenalates.com/scss/main.scss */
+.control-label {
+  margin-bottom: 10px;
+}
+
+/* line 329, D:/workspace/Github/milenalates.com/scss/main.scss */
+.inputGroupContainer {
+  margin-bottom: 30px;
+}
+
+/* line 332, D:/workspace/Github/milenalates.com/scss/main.scss */
+.google-map {
+  width: 100%;
+  height: 350px;
+}
+
+/* line 336, D:/workspace/Github/milenalates.com/scss/main.scss */
+.glyphicon.glyphicon-user, .glyphicon-envelope, .glyphicon-pencil {
+  color: #d56400;
+}
+
+/*footer*/
+/* line 340, D:/workspace/Github/milenalates.com/scss/main.scss */
+.footer-section {
+  background-color: #282828;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*My name is Milena, and I am graduated lawyer who lives in a world of designs */
+/* line 349, D:/workspace/Github/milenalates.com/scss/main.scss */
+.design-by {
+  color: #545454;
+  font-size: 10px;
+  padding-top: 20px;
+}
+
+/* line 355, D:/workspace/Github/milenalates.com/scss/main.scss */
+.social-icon {
+  color: #fff;
+}
+
+/* line 358, D:/workspace/Github/milenalates.com/scss/main.scss */
+ul.social-icons {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+/* line 363, D:/workspace/Github/milenalates.com/scss/main.scss */
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+
+/* line 368, D:/workspace/Github/milenalates.com/scss/main.scss */
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 374, D:/workspace/Github/milenalates.com/scss/main.scss */
+.fa-facebook {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+/* line 382, D:/workspace/Github/milenalates.com/scss/main.scss */
+.fa-facebook:hover {
+  background-color: #3d5b99;
+}
+
+/* line 387, D:/workspace/Github/milenalates.com/scss/main.scss */
+.fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+/* line 395, D:/workspace/Github/milenalates.com/scss/main.scss */
+.fa-linkedin:hover {
+  background-color: #0073a4;
+}
+
+/* line 400, D:/workspace/Github/milenalates.com/scss/main.scss */
+.fa-google-plus {
+  padding: 10px 9px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+/* line 408, D:/workspace/Github/milenalates.com/scss/main.scss */
+.fa-google-plus:hover {
+  background-color: #e25714;
+}
+
+/* line 412, D:/workspace/Github/milenalates.com/scss/main.scss */
+ul.social-icons {
+  margin-top: -10px;
+}
+
+/* line 415, D:/workspace/Github/milenalates.com/scss/main.scss */
+.fa-github {
+  padding: 10px 14px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+
+/* line 423, D:/workspace/Github/milenalates.com/scss/main.scss */
+.fa-github:hover {
+  background-color: #4078c0;
+}
+
+/* line 428, D:/workspace/Github/milenalates.com/scss/main.scss */
+.ih-item.square {
+  width: 100%;
+}
+
+/*# sourceMappingURL=../css/main.map */

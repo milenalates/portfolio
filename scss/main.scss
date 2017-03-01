@@ -1,3 +1,5 @@
+@import './_variables.scss';
+
 body h1,h2,h3,h4,h5{
 font-family: 'Hammersmith One', sans-serif;
 }
@@ -111,17 +113,31 @@ color: white;
     padding-top: 40px;
     padding-bottom: 40px;
 }
-section.about-skills-contact h2{
-margin-bottom: 50px;
-display: inline-block;
-border-bottom: 2px solid #d56400;
-}
 
-section.about-skills-contact p{
-color: #000;
-padding-top: 3px;
-font-family: 'Arial', sans-serif;
+section.about-skills-contact {
+    h2 {
+        margin-bottom: $margin-xl;
+        display: inline-block;
+        border-bottom: 2px solid #d56400;        
+    }
+    p {
+        color: #000;
+        padding-top: 3px;
+        font-family: 'Arial', sans-serif;
+    }
 }
+//section.about-skills-contact h2{
+//margin-bottom: 50px;
+//display: inline-block;
+//border-bottom: 2px solid #d56400;
+//}
+//
+//section.about-skills-contact p{
+//color: #000;
+//padding-top: 3px;
+//font-family: 'Arial', sans-serif;
+//}
+
 .education-portfolio{
 background: url(../images/subtle_carbon_@2X.png);
 }
@@ -172,35 +188,37 @@ clear: both;
 }
 
 .timeline-centered .timeline-entry.left-aligned {
-float: left;
+        float: left;
+    .timeline-entry-inner {
+        margin-left: 0;
+        margin-right: -18px;
+        .timeline-time {
+            left: auto;
+            right: -140px;
+            text-align: left;
+        }
+        .timeline-icon {
+            float: right;
+        }
+        .timeline-label {
+            margin-left: 0;
+            margin-right: 70px;
+            &:after {
+                left: auto;
+                right: 0;
+                margin-left: 0;
+                margin-right: -9px;
+                -moz-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+            }
+        }
+    }
+    
 }
-.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner {
-margin-left: 0;
-margin-right: -18px;
-}
-.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-time {
-left: auto;
-right: -140px;
-text-align: left;
-}
-.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-icon {
-float: right;
-}
-.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label {
-margin-left: 0;
-margin-right: 70px;
-}
-.timeline-centered .timeline-entry.left-aligned .timeline-entry-inner .timeline-label:after {
-left: auto;
-right: 0;
-margin-left: 0;
-margin-right: -9px;
--moz-transform: rotate(180deg);
--o-transform: rotate(180deg);
--webkit-transform: rotate(180deg);
--ms-transform: rotate(180deg);
-transform: rotate(180deg);
-}
+
 .timeline-centered .timeline-entry .timeline-entry-inner {
 position: relative;
 margin-left: -22px;
@@ -302,7 +320,7 @@ margin-bottom: 5px;
     margin-bottom: 20px; 
 }
 .ih-item img{
-    height: ;
+//    height: ;
 }
 /*contact*/
 .control-label{
@@ -341,14 +359,17 @@ ul.social-icons {
     margin-top: 10px;
     padding-left: 0;
 }
-.social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
+.social-icons {
+    li {
+         vertical-align: top;
+         display: inline;
+         height: 100px;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
 }
-.social-icons a {
-    color: #fff;
-    text-decoration: none;
+   
 }
 .fa-facebook {
     padding:10px 14px;
@@ -358,9 +379,9 @@ ul.social-icons {
     -webkit-transition:.5s;
     transition: .5s;
     background-color: #322f30;
-}
-.fa-facebook:hover {
-    background-color: #3d5b99;
+    &:hover {
+        background-color: #3d5b99;
+    }
 }
 
 .fa-linkedin {
@@ -371,10 +392,11 @@ ul.social-icons {
     -webkit-transition:.5s;
     transition: .5s;
     background-color: #322f30;
-}
-.fa-linkedin:hover {
+    &:hover {
     background-color: #0073a4;
 }
+}
+
 .fa-google-plus {
     padding:10px 9px;
     -o-transition:.5s;
@@ -383,9 +405,9 @@ ul.social-icons {
     -webkit-transition:.5s;
     transition: .5s;
     background-color: #322f30;
-}
-.fa-google-plus:hover {
+    &:hover {
     background-color: #e25714;
+}
 }
 ul.social-icons{
     margin-top: -10px;
@@ -398,9 +420,9 @@ ul.social-icons{
     -webkit-transition:.5s;
     transition: .5s;
     background-color: #322f30;
-}
-.fa-github:hover{
+    &:hover{
     background-color:#4078c0;
+}
 }
 
 .ih-item.square {
